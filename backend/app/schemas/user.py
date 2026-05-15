@@ -28,6 +28,7 @@ class UserResponse(BaseModel):
     avatar_url: str | None
     is_active: bool
     is_superuser: bool
+    role: str
     created_at: datetime
 
     model_config = {"from_attributes": True}
@@ -40,3 +41,4 @@ class RefreshTokenRequest(BaseModel):
 class UserUpdateRequest(BaseModel):
     username: str | None = None
     avatar_url: str | None = None
+    role: str | None = None

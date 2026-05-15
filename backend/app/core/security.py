@@ -1,4 +1,5 @@
 from datetime import datetime, timedelta, timezone
+from hashlib import sha256
 
 from jose import JWTError, jwt
 from passlib.context import CryptContext
@@ -39,3 +40,7 @@ def decode_token(token: str) -> dict:
         return jwt.decode(token, settings.JWT_SECRET_KEY, algorithms=[settings.JWT_ALGORITHM])
     except JWTError:
         return {}
+
+
+def hash_token(token: str) -> str:
+    return sha256(token.encode()).hexdigest()
