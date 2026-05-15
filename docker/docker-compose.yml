@@ -3,6 +3,7 @@ version: "3.9"
 services:
   postgres:
     image: pgvector/pgvector:pg16
+    container_name: campusmind-postgres
     environment:
       POSTGRES_USER: ${POSTGRES_USER:-campusmind}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-change-me-in-production}
@@ -16,9 +17,11 @@ services:
       interval: 5s
       timeout: 5s
       retries: 5
+    restart: unless-stopped
 
   redis:
     image: redis:7-alpine
+    container_name: campusmind-redis
     ports:
       - "6379:6379"
     volumes:
@@ -28,13 +31,18 @@ services:
       interval: 5s
       timeout: 5s
       retries: 5
+    restart: unless-stopped
 
   backend:
     build:
       context: ..
       dockerfile: docker/Dockerfile.backend
+    container_name: campusmind-backend
     env_file:
       - ../.env
+    environment:
+      - POSTGRES_HOST=postgres
+      - REDIS_URL=redis://redis:6379/0
     ports:
       - "8000:8000"
     depends_on:
@@ -45,11 +53,13 @@ services:
     volumes:
       - ../backend:/app
       - uploads:/app/uploads
+    restart: unless-stopped
 
   frontend:
     build:
       context: ..
       dockerfile: docker/Dockerfile.frontend
+    container_name: campusmind-frontend
     ports:
       - "3000:3000"
     depends_on:
@@ -57,9 +67,12 @@ services:
     volumes:
       - ../frontend:/app
       - /app/node_modules
+      - /app/.next
+    restart: unless-stopped
 
   nginx:
     image: nginx:alpine
+    container_name: campusmind-nginx
     ports:
       - "80:80"
     volumes:
@@ -67,6 +80,7 @@ services:
     depends_on:
       - frontend
       - backend
+    restart: unless-stopped
 
 volumes:
   pgdata:

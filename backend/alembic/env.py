@@ -6,6 +6,9 @@ from app.models.base import Base
 
 # Import all models so Base.metadata includes them
 import app.models.user  # noqa: F401
+import app.models.chat  # noqa: F401
+import app.models.knowledge  # noqa: F401
+import app.models.agent  # noqa: F401
 
 config = context.config
 config.set_main_option("sqlalchemy.url", settings.database_url_sync)
