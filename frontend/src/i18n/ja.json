@@ -1,0 +1,84 @@
+{
+  "common": {
+    "signIn": "ログイン",
+    "signOut": "ログアウト",
+    "signUp": "登録",
+    "getStarted": "はじめる",
+    "startFree": "無料で始める",
+    "saveChanges": "変更を保存",
+    "settings": "設定",
+    "settingsSaved": "設定を保存しました",
+    "email": "メールアドレス",
+    "password": "パスワード",
+    "username": "ユーザー名",
+    "profile": "プロフィール",
+    "language": "言語"
+  },
+  "landing": {
+    "title": "あなたの AI 搭載",
+    "titleHighlight": "キャンパスアシスタント",
+    "subtitle": "コースワークについてAIとチャットし、ドキュメントをアップロードしてスマートなQ&A、キャンパスライフのためのカスタムAIエージェントを構築。",
+    "featureChatTitle": "AI チャット",
+    "featureChatDesc": "キャンパスに精通した高度なAIとのリアルタイムストリーミング会話。",
+    "featureKnowledgeTitle": "ナレッジベース",
+    "featureKnowledgeDesc": "PDFやドキュメントをアップロードして、RAG駆動のインテリジェントなQ&A。",
+    "featureAgentsTitle": "カスタムエージェント",
+    "featureAgentsDesc": "ツールと永続メモリを備えたパーソナライズされたAIエージェントを構築。"
+  },
+  "auth": {
+    "signInTitle": "ログイン",
+    "signInDesc": "認証情報を入力して続行",
+    "signUpTitle": "アカウント作成",
+    "signUpDesc": "CampusMind AI に参加して始めましょう",
+    "emailPlaceholder": "you@campus.edu",
+    "passwordPlaceholder": "パスワード",
+    "passwordMinChars": "6文字以上",
+    "usernamePlaceholder": "ユーザー名",
+    "loginFailed": "ログインに失敗しました",
+    "registerFailed": "登録に失敗しました",
+    "welcomeBack": "おかえりなさい！",
+    "accountCreated": "アカウントが作成されました！ログインしてください。",
+    "noAccount": "アカウントをお持ちでないですか？",
+    "haveAccount": "すでにアカウントをお持ちですか？"
+  },
+  "dashboard": {
+    "welcomeBack": "おかえりなさい、{name}",
+    "readyMessage": "AI 搭載のキャンパスアシスタントの準備ができました。",
+    "aiChat": "AI チャット",
+    "aiChatDesc": "会話を始める",
+    "knowledgeBase": "ナレッジベース",
+    "knowledgeBaseDesc": "ドキュメントのアップロードと検索",
+    "customAgents": "カスタムエージェント",
+    "customAgentsDesc": "AI アシスタントを構築"
+  },
+  "sidebar": {
+    "chat": "チャット",
+    "knowledge": "ナレッジ",
+    "agents": "エージェント",
+    "settings": "設定",
+    "appName": "CampusMind"
+  },
+  "settings": {
+    "title": "設定",
+    "profile": "プロフィール",
+    "profileDesc": "表示情報を更新",
+    "dangerZone": "危険区域",
+    "dangerDesc": "アカウントからログアウト"
+  },
+  "chat": {
+    "title": "AI チャット",
+    "comingSoon": "第2週に登場",
+    "comingDesc": "ストリーミング応答、会話履歴、Markdown レンダリングを備えたリアルタイム AI チャット。",
+    "placeholder": "会話機能は第2週に利用可能になります。"
+  },
+  "knowledge": {
+    "title": "ナレッジベース",
+    "comingSoon": "第3週に登場",
+    "comingDesc": "PDF ドキュメントをアップロードし、RAG 駆動のセマンティック検索と AI 応答でクエリを実行。"
+  },
+  "agents": {
+    "title": "カスタムエージェント",
+    "comingSoon": "第4週に登場",
+    "comingDesc": "定義されたツール、システムプロンプト、永続メモリを備えたカスタム AI エージェントを作成。"
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "common": {
+    "signIn": "Sign In",
+    "signOut": "Sign Out",
+    "signUp": "Sign Up",
+    "getStarted": "Get Started",
+    "startFree": "Start Free",
+    "saveChanges": "Save Changes",
+    "settings": "Settings",
+    "settingsSaved": "Settings saved",
+    "email": "Email",
+    "password": "Password",
+    "username": "Username",
+    "profile": "Profile",
+    "language": "Language"
+  },
+  "landing": {
+    "badge": "AI-Powered Campus Assistant",
+    "title": "Your AI-Powered",
+    "titleHighlight": "Campus Assistant",
+    "subtitle": "Chat with AI about coursework, upload documents for smart Q&A, and build custom AI agents for campus life.",
+    "featureChatTitle": "AI Chat",
+    "featureChatDesc": "Real-time streaming conversations with advanced campus-knowledgeable AI.",
+    "featureKnowledgeTitle": "Knowledge Base",
+    "featureKnowledgeDesc": "Upload PDFs and documents for intelligent RAG-powered Q&A.",
+    "featureAgentsTitle": "Custom Agents",
+    "featureAgentsDesc": "Build personalized AI agents with tools and persistent memory."
+  },
+  "auth": {
+    "signInTitle": "Sign In",
+    "signInDesc": "Enter your credentials to continue",
+    "signUpTitle": "Create Account",
+    "signUpDesc": "Join CampusMind AI to get started",
+    "emailPlaceholder": "you@campus.edu",
+    "passwordPlaceholder": "Your password",
+    "passwordMinChars": "Min 6 characters",
+    "usernamePlaceholder": "Your username",
+    "loginFailed": "Login failed",
+    "registerFailed": "Registration failed",
+    "welcomeBack": "Welcome back!",
+    "accountCreated": "Account created! Please sign in.",
+    "noAccount": "Don't have an account?",
+    "haveAccount": "Already have an account?"
+  },
+  "dashboard": {
+    "welcomeBack": "Welcome back, {name}",
+    "readyMessage": "Your AI-powered campus assistant is ready.",
+    "aiChat": "AI Chat",
+    "aiChatDesc": "Start a conversation",
+    "knowledgeBase": "Knowledge Base",
+    "knowledgeBaseDesc": "Upload & query documents",
+    "customAgents": "Custom Agents",
+    "customAgentsDesc": "Build your AI assistant"
+  },
+  "sidebar": {
+    "chat": "Chat",
+    "knowledge": "Knowledge",
+    "agents": "Agents",
+    "settings": "Settings",
+    "appName": "CampusMind"
+  },
+  "settings": {
+    "title": "Settings",
+    "profile": "Profile",
+    "profileDesc": "Update your display information",
+    "dangerZone": "Danger Zone",
+    "dangerDesc": "Sign out of your account"
+  },
+  "chat": {
+    "title": "AI Chat",
+    "comingSoon": "Coming in Week 2",
+    "comingDesc": "Real-time AI chat with streaming responses, conversation history, and Markdown rendering.",
+    "placeholder": "Conversation will be available in Week 2."
+  },
+  "knowledge": {
+    "title": "Knowledge Base",
+    "comingSoon": "Coming in Week 3",
+    "comingDesc": "Upload PDF documents and query them with RAG-powered semantic search and AI responses."
+  },
+  "agents": {
+    "title": "Custom Agents",
+    "comingSoon": "Coming in Week 4",
+    "comingDesc": "Create custom AI agents with defined tools, system prompts, and persistent memory for specialized tasks."
+  }
+}

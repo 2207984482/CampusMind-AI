@@ -1,6 +1,7 @@
 import { useCallback } from "react";
 import client from "@/lib/api/client";
 import { useChatStore } from "@/store/chat-store";
+import type { Conversation, Message as StoreMessage } from "@/store/chat-store";
 import type { APIResponse } from "@/types/api";
 
 export function useChat() {
@@ -21,14 +22,14 @@ export function useChat() {
       setIsStreaming(true);
       addMessage({
         id: crypto.randomUUID(),
-        role: "user",
+        role: "user" as const,
         content,
         createdAt: new Date().toISOString(),
       });
 
       try {
         const { data } = await client.post<
-          APIResponse<{ conversation_id: string; message: Message; response: Message }>
+          APIResponse<{ conversation_id: string; message: StoreMessage; response: StoreMessage }>
         >("/chat", {
           conversation_id: activeConversationId,
           message: content,
@@ -43,7 +44,7 @@ export function useChat() {
       } catch (err) {
         addMessage({
           id: crypto.randomUUID(),
-          role: "assistant",
+          role: "assistant" as const,
           content: "Sorry, something went wrong. Please try again.",
           createdAt: new Date().toISOString(),
         });
@@ -55,7 +56,7 @@ export function useChat() {
   );
 
   const loadConversations = useCallback(async () => {
-    const { data } = await client.get<APIResponse>("/conversations");
+    const { data } = await client.get<APIResponse<{ conversations: Conversation[] }>>("/conversations");
     if (data.data) {
       setConversations(data.data.conversations);
     }
@@ -72,9 +73,3 @@ export function useChat() {
   };
 }
 
-type Message = {
-  id: string;
-  role: string;
-  content: string;
-  createdAt: string;
-};

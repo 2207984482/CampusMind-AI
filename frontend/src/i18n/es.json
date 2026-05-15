@@ -1,0 +1,84 @@
+{
+  "common": {
+    "signIn": "Iniciar sesión",
+    "signOut": "Cerrar sesión",
+    "signUp": "Registrarse",
+    "getStarted": "Comenzar",
+    "startFree": "Comenzar gratis",
+    "saveChanges": "Guardar cambios",
+    "settings": "Configuración",
+    "settingsSaved": "Configuración guardada",
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "username": "Nombre de usuario",
+    "profile": "Perfil",
+    "language": "Idioma"
+  },
+  "landing": {
+    "title": "Tu",
+    "titleHighlight": "Asistente Campus IA",
+    "subtitle": "Chatea con IA sobre tus cursos, sube documentos para Q&A inteligente y crea agentes IA personalizados para la vida universitaria.",
+    "featureChatTitle": "Chat IA",
+    "featureChatDesc": "Conversaciones en tiempo real con IA avanzada con conocimiento del campus.",
+    "featureKnowledgeTitle": "Base de conocimiento",
+    "featureKnowledgeDesc": "Sube PDFs y documentos para Q&A inteligente basado en RAG.",
+    "featureAgentsTitle": "Agentes personalizados",
+    "featureAgentsDesc": "Construye agentes IA personalizados con herramientas y memoria persistente."
+  },
+  "auth": {
+    "signInTitle": "Iniciar sesión",
+    "signInDesc": "Ingresa tus credenciales para continuar",
+    "signUpTitle": "Crear cuenta",
+    "signUpDesc": "Únete a CampusMind AI para comenzar",
+    "emailPlaceholder": "tu@campus.edu",
+    "passwordPlaceholder": "Tu contraseña",
+    "passwordMinChars": "Mínimo 6 caracteres",
+    "usernamePlaceholder": "Tu nombre de usuario",
+    "loginFailed": "Error al iniciar sesión",
+    "registerFailed": "Error al registrarse",
+    "welcomeBack": "¡Bienvenido de nuevo!",
+    "accountCreated": "¡Cuenta creada! Por favor, inicia sesión.",
+    "noAccount": "¿No tienes cuenta?",
+    "haveAccount": "¿Ya tienes cuenta?"
+  },
+  "dashboard": {
+    "welcomeBack": "Bienvenido de nuevo, {name}",
+    "readyMessage": "Tu asistente de campus con IA está listo.",
+    "aiChat": "Chat IA",
+    "aiChatDesc": "Iniciar una conversación",
+    "knowledgeBase": "Base de conocimiento",
+    "knowledgeBaseDesc": "Subir y consultar documentos",
+    "customAgents": "Agentes personalizados",
+    "customAgentsDesc": "Construye tu asistente IA"
+  },
+  "sidebar": {
+    "chat": "Chat",
+    "knowledge": "Conocimiento",
+    "agents": "Agentes",
+    "settings": "Configuración",
+    "appName": "CampusMind"
+  },
+  "settings": {
+    "title": "Configuración",
+    "profile": "Perfil",
+    "profileDesc": "Actualiza tu información",
+    "dangerZone": "Zona peligrosa",
+    "dangerDesc": "Cierra sesión de tu cuenta"
+  },
+  "chat": {
+    "title": "Chat IA",
+    "comingSoon": "Próximamente en la semana 2",
+    "comingDesc": "Chat IA en tiempo real con respuestas en streaming, historial de conversaciones y renderizado Markdown.",
+    "placeholder": "La conversación estará disponible en la semana 2."
+  },
+  "knowledge": {
+    "title": "Base de conocimiento",
+    "comingSoon": "Próximamente en la semana 3",
+    "comingDesc": "Sube documentos PDF y consúltalos con búsqueda semántica RAG y respuestas de IA."
+  },
+  "agents": {
+    "title": "Agentes personalizados",
+    "comingSoon": "Próximamente en la semana 4",
+    "comingDesc": "Crea agentes IA personalizados con herramientas definidas, prompts de sistema y memoria persistente."
+  }
+}

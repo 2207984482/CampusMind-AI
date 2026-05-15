@@ -2,15 +2,32 @@ import { cn } from "@/lib/utils/cn";
 
 interface CardProps extends React.HTMLAttributes<HTMLDivElement> {
   padding?: "none" | "sm" | "md" | "lg";
+  variant?: "default" | "glass" | "elevated";
+  glow?: boolean;
 }
 
 const paddingStyles = { none: "", sm: "p-3", md: "p-5", lg: "p-8" };
 
-export function Card({ className, padding = "md", children, ...props }: CardProps) {
+const variantStyles: Record<string, string> = {
+  default: "border-surface-200 bg-white dark:border-ink-800 dark:bg-ink-900 shadow-soft-sm",
+  glass: "glass",
+  elevated: "border-surface-200 bg-white dark:border-ink-800 dark:bg-ink-900 shadow-soft-lg",
+};
+
+export function Card({
+  className,
+  padding = "md",
+  variant = "default",
+  glow = false,
+  children,
+  ...props
+}: CardProps) {
   return (
     <div
       className={cn(
-        "rounded-xl border border-gray-200 bg-white dark:border-gray-800 dark:bg-gray-900 shadow-sm",
+        "rounded-2xl border transition-all duration-300",
+        variantStyles[variant],
+        glow && "hover:shadow-glow-sm",
         paddingStyles[padding],
         className
       )}
@@ -22,13 +39,23 @@ export function Card({ className, padding = "md", children, ...props }: CardProp
 }
 
 export function CardHeader({ className, ...props }: React.HTMLAttributes<HTMLDivElement>) {
-  return <div className={cn("flex flex-col gap-1.5", className)} {...props} />;
+  return <div className={cn("flex flex-col gap-1", className)} {...props} />;
 }
 
 export function CardTitle({ className, ...props }: React.HTMLAttributes<HTMLHeadingElement>) {
-  return <h3 className={cn("text-lg font-semibold", className)} {...props} />;
+  return (
+    <h3
+      className={cn("text-lg font-semibold text-ink-900 dark:text-surface-100 tracking-tight", className)}
+      {...props}
+    />
+  );
 }
 
 export function CardDescription({ className, ...props }: React.HTMLAttributes<HTMLParagraphElement>) {
-  return <p className={cn("text-sm text-gray-500 dark:text-gray-400", className)} {...props} />;
+  return (
+    <p
+      className={cn("text-sm text-ink-500 dark:text-surface-400 leading-relaxed", className)}
+      {...props}
+    />
+  );
 }

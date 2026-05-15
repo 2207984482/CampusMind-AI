@@ -1,13 +1,13 @@
 import { create } from "zustand";
 
-interface Message {
+export interface Message {
   id: string;
   role: "user" | "assistant" | "system";
   content: string;
   createdAt: string;
 }
 
-interface Conversation {
+export interface Conversation {
   id: string;
   title: string;
   model: string;

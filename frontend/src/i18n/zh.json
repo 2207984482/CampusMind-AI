@@ -1,0 +1,85 @@
+{
+  "common": {
+    "signIn": "登录",
+    "signOut": "退出登录",
+    "signUp": "注册",
+    "getStarted": "开始使用",
+    "startFree": "免费开始",
+    "saveChanges": "保存更改",
+    "settings": "设置",
+    "settingsSaved": "设置已保存",
+    "email": "邮箱",
+    "password": "密码",
+    "username": "用户名",
+    "profile": "个人资料",
+    "language": "语言"
+  },
+  "landing": {
+    "badge": "AI 驱动的校园助手",
+    "title": "你的 AI 驱动",
+    "titleHighlight": "校园助手",
+    "subtitle": "与 AI 聊天讨论课程、上传文档获取智能问答、构建校园生活的自定义 AI 助手。",
+    "featureChatTitle": "AI 对话",
+    "featureChatDesc": "与精通校园知识的 AI 进行实时流式对话。",
+    "featureKnowledgeTitle": "知识库",
+    "featureKnowledgeDesc": "上传 PDF 和文档，获取 RAG 驱动的智能问答。",
+    "featureAgentsTitle": "自定义助手",
+    "featureAgentsDesc": "构建带工具和持久记忆的个性化 AI 助手。"
+  },
+  "auth": {
+    "signInTitle": "登录",
+    "signInDesc": "输入您的凭据以继续",
+    "signUpTitle": "创建账号",
+    "signUpDesc": "加入 CampusMind AI 开始使用",
+    "emailPlaceholder": "you@campus.edu",
+    "passwordPlaceholder": "您的密码",
+    "passwordMinChars": "至少 6 个字符",
+    "usernamePlaceholder": "您的用户名",
+    "loginFailed": "登录失败",
+    "registerFailed": "注册失败",
+    "welcomeBack": "欢迎回来！",
+    "accountCreated": "账号已创建！请登录。",
+    "noAccount": "还没有账号？",
+    "haveAccount": "已有账号？"
+  },
+  "dashboard": {
+    "welcomeBack": "欢迎回来，{name}",
+    "readyMessage": "你的 AI 校园助手已就绪。",
+    "aiChat": "AI 对话",
+    "aiChatDesc": "开始一段对话",
+    "knowledgeBase": "知识库",
+    "knowledgeBaseDesc": "上传并查询文档",
+    "customAgents": "自定义助手",
+    "customAgentsDesc": "构建你的 AI 助手"
+  },
+  "sidebar": {
+    "chat": "对话",
+    "knowledge": "知识库",
+    "agents": "助手",
+    "settings": "设置",
+    "appName": "CampusMind"
+  },
+  "settings": {
+    "title": "设置",
+    "profile": "个人资料",
+    "profileDesc": "更新您的显示信息",
+    "dangerZone": "危险区域",
+    "dangerDesc": "退出您的账号"
+  },
+  "chat": {
+    "title": "AI 对话",
+    "comingSoon": "第 2 周上线",
+    "comingDesc": "实时 AI 聊天，支持流式响应、对话历史和 Markdown 渲染。",
+    "placeholder": "对话功能将在第 2 周上线。"
+  },
+  "knowledge": {
+    "title": "知识库",
+    "comingSoon": "第 3 周上线",
+    "comingDesc": "上传 PDF 文档并通过 RAG 驱动的语义搜索和 AI 回复进行查询。"
+  },
+  "agents": {
+    "title": "自定义助手",
+    "comingSoon": "第 4 周上线",
+    "comingDesc": "创建带定义工具、系统提示词和持久记忆的自定义 AI 助手。"
+  }
+}

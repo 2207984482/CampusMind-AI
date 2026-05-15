@@ -1,0 +1,84 @@
+{
+  "common": {
+    "signIn": "로그인",
+    "signOut": "로그아웃",
+    "signUp": "회원가입",
+    "getStarted": "시작하기",
+    "startFree": "무료로 시작",
+    "saveChanges": "변경 사항 저장",
+    "settings": "설정",
+    "settingsSaved": "설정이 저장되었습니다",
+    "email": "이메일",
+    "password": "비밀번호",
+    "username": "사용자 이름",
+    "profile": "프로필",
+    "language": "언어"
+  },
+  "landing": {
+    "title": "당신의 AI 기반",
+    "titleHighlight": "캠퍼스 어시스턴트",
+    "subtitle": "코스워크에 대해 AI와 채팅하고, 문서를 업로드하여 스마트 Q&A를 받고, 캠퍼스 생활을 위한 맞춤형 AI 에이전트를 구축하세요.",
+    "featureChatTitle": "AI 채팅",
+    "featureChatDesc": "캠퍼스 지식을 갖춘 고급 AI와의 실시간 스트리밍 대화.",
+    "featureKnowledgeTitle": "지식 베이스",
+    "featureKnowledgeDesc": "PDF 및 문서를 업로드하여 RAG 기반 지능형 Q&A를 받으세요.",
+    "featureAgentsTitle": "커스텀 에이전트",
+    "featureAgentsDesc": "도구와 영구 메모리를 갖춘 개인화된 AI 에이전트를 구축하세요."
+  },
+  "auth": {
+    "signInTitle": "로그인",
+    "signInDesc": "계속하려면 자격 증명을 입력하세요",
+    "signUpTitle": "계정 만들기",
+    "signUpDesc": "CampusMind AI에 가입하여 시작하세요",
+    "emailPlaceholder": "you@campus.edu",
+    "passwordPlaceholder": "비밀번호",
+    "passwordMinChars": "최소 6자",
+    "usernamePlaceholder": "사용자 이름",
+    "loginFailed": "로그인 실패",
+    "registerFailed": "회원가입 실패",
+    "welcomeBack": "돌아오신 것을 환영합니다!",
+    "accountCreated": "계정이 생성되었습니다! 로그인하세요.",
+    "noAccount": "계정이 없으신가요?",
+    "haveAccount": "이미 계정이 있으신가요?"
+  },
+  "dashboard": {
+    "welcomeBack": "돌아오신 것을 환영합니다, {name}",
+    "readyMessage": "AI 기반 캠퍼스 어시스턴트가 준비되었습니다.",
+    "aiChat": "AI 채팅",
+    "aiChatDesc": "대화 시작하기",
+    "knowledgeBase": "지식 베이스",
+    "knowledgeBaseDesc": "문서 업로드 및 검색",
+    "customAgents": "커스텀 에이전트",
+    "customAgentsDesc": "AI 어시스턴트 구축"
+  },
+  "sidebar": {
+    "chat": "채팅",
+    "knowledge": "지식",
+    "agents": "에이전트",
+    "settings": "설정",
+    "appName": "CampusMind"
+  },
+  "settings": {
+    "title": "설정",
+    "profile": "프로필",
+    "profileDesc": "표시 정보 업데이트",
+    "dangerZone": "위험 구역",
+    "dangerDesc": "계정에서 로그아웃"
+  },
+  "chat": {
+    "title": "AI 채팅",
+    "comingSoon": "2주차 출시 예정",
+    "comingDesc": "스트리밍 응답, 대화 기록 및 Markdown 렌더링을 갖춘 실시간 AI 채팅.",
+    "placeholder": "대화 기능은 2주차에 제공됩니다."
+  },
+  "knowledge": {
+    "title": "지식 베이스",
+    "comingSoon": "3주차 출시 예정",
+    "comingDesc": "PDF 문서를 업로드하고 RAG 기반 시맨틱 검색 및 AI 응답으로 쿼리하세요."
+  },
+  "agents": {
+    "title": "커스텀 에이전트",
+    "comingSoon": "4주차 출시 예정",
+    "comingDesc": "정의된 도구, 시스템 프롬프트 및 영구 메모리를 갖춘 커스텀 AI 에이전트를 만드세요."
+  }
+}
